@@ -1,0 +1,42 @@
+* {
+    font-family: 'Prompt', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+.img-slide-1{
+    background-image: url('image/cover/2in1.webp');
+    background-size: cover;
+    background-position: center;
+}
+.img-slide-2{
+    background-image: url('image/cover/plastic.png');
+    background-size: cover;
+    background-position: center;
+}
+.img-slide-3{
+    background-image: url('image/cover/pp.png');
+    background-size: cover;
+    background-position: center;
+}
+.img-slide-4{
+    background-image: url('image/cover/silvercoat.png');
+    background-size: cover;
+    background-position: center;
+}
+.img-slide-5{
+    background-image: url('image/cover//silverpvc.png');
+    background-size: cover;
+    background-position: center;
+}
+.img-slide-6{
+    background-image: url('image/cover/spunbrond.png');
+    background-size: cover;
+    background-position: center;
+}
+.splide__slide{
+    height: 400px;
+}
+.img-slide-card:hover p{
+    display: none;
+}

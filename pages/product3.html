@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>สินค้า | แบบที่ 3 PVC กันน้ำ 100%</title>
+
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/product.css" />
+    <link rel="stylesheet" href="../style/scroollTop.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <!-- Import Carousel SpileLibrary -->
+    <script src="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+     "></script>
+    <link
+      href="
+     https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+     "
+      rel="stylesheet"
+    />
+    <!-- Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <!-- Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"
+      integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- LINK ANIMATE ON SCROLL LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ##################################### NAVBAR ###########################################  -->
+    <nav class="bg-gray-800 p-6 fixed top-0 w-full z-1 shadow-xl">
+      <div class="mx-4 flex justify-between items-center">
+        <!-- Logo (Left) -->
+        <div class="text-white font-bold text-xl">Carcover p.a.c By aps</div>
+
+        <!-- Navbar Links (Right) -->
+        <div class="space-x-12 hidden md:flex text-xl">
+          <a href="../index.html" class="text-white hover:text-gray-300"
+            >หน้าแรก</a
+          >
+          <a href="productMenu.html" class="text-white hover:text-gray-300">สินค้า</a>
+          <a href="customerReview.html" class="text-white hover:text-gray-300">รีวิว</a>
+          <a href="contact.html" class="text-white hover:text-gray-300">ติดต่อเรา</a>
+        </div>
+
+        <!-- Mobile Menu Icon (for small screens) -->
+        <div class="md:hidden">
+          <button id="menuButton" class="text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 12h18M3 6h18M3 18h18"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu (initially hidden) -->
+      <div id="mobileMenu" class="md:hidden hidden bg-gray-800 text-white">
+        <ul class="flex flex-col space-y-5 text-center text-lg pt-5 mt-6 border-t-1">
+          <li><a href="../index.html" class="hover:text-gray-300">หน้าแรก</a></li>
+          <li><a href="productMenu.html" class="hover:text-gray-300">สินค้า</a></li>
+          <li><a href="customerReview.html" class="hover:text-gray-300">รีวิว</a></li>
+          <li><a href="contact.html" class="hover:text-gray-300">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ##################################### PRODUCT ###########################################  -->
+    <section class="product container mx-auto my-10 mt-30">
+      <div class="product-box flex flex-col md:flex-row">
+        <div class="product-img md:w-1/2 flex justify-center">
+          <img
+            class="w-[65%] h-[65%] rounded-xl shadow-2xl"
+            src="../image/product/product3.jpg"
+            alt="product1"
+          />
+        </div>
+        <div
+          class="product-info md:w-1/2 my-10 md:my-0 md:border-l-3 text-center md:text-left md:pl-10"
+        >
+          <h1 class="text-xl md:text-3xl md:mb-2 font-bold">ชื่อสินค้า : PVC กันน้ำ 100% (PVC 1 ชั้น)</h1>
+          <h3 class="text-xl md:text-3xl font-bold">ราคา : 990 บาท</h3>
+          <p class="text-lg md:text-2xl">
+            <i class="fa-solid fa-circle-check text-green-800"></i> กันน้ำ 100%
+          </p>
+          <p class="text-lg md:text-2xl">
+            <i class="fa-solid fa-circle-check text-green-800"></i>
+            กัน UV
+          </p>
+          <p class="text-lg md:text-2xl">
+            <i class="fa-solid fa-circle-check text-green-800"></i> กันไอเค็มจากทะเล
+          </p>
+          <p class="text-lg md:text-2xl">
+            <i class="fa-solid fa-circle-check text-green-800"></i> กันมูลนก
+          </p>
+          <p class="text-lg md:text-2xl">
+            <i class="fa-solid fa-circle-check text-green-800"></i> กันฝุ่น
+          </p>
+          <p class="text-lg md:text-2xl">
+            <i class="fa-solid fa-car-side mb-8"></i> มีขนาดตามรุ่นรถ ( รถเก๋ง /
+            กระบะ / SUV )
+          </p>
+          <p class="text-lg md:text-2xl">
+            คุณสมบัติ : ผลิตจากผ้า PVC เคลือบมุก สีเทาเงิน(สีบรอนด์) เนื้อผ้าเหนียวนุ่ม ยืดหยุ่น ผ้าคลุมรถยนต์PVCเชื่อมด้วยระบบไฟฟ้าทั้งผืน ไม่มีรอยตะเข็บ ไม่ทำให้ปลิวตามลม มีสายรัดรอบคัน เข้ารูป สวยงาม
+          </p>
+          <a href="" class="flex justify-center md:justify-between">
+            <p
+              class="product-btn text-lg md:text-xl bg-green-800 text-white p-3 w-60 rounded-xl text-center hover:bg-white hover:text-green-800 border-4 hover:font-bold"
+            >
+              สั่งซื้อสินค้า คลิกตรงนี้ !
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="product-warnning container my-10">
+        <div class="product-list flex flex-wrap md:flex-row flex-col">
+          <div class="product-item flex justify-center md:w-1/3">
+            <img
+              class="w-90 md:w-98 md:h-100"
+              src="../image/warnning/1889e31d-d881-48e9-93fa-ab1e6647b3f0.jpg"
+              alt=""
+            />
+          </div>
+          <div class="product-item flex justify-center md:w-1/3">
+            <img
+              class="w-90 md:w-98 md:h-100"
+              src="../image/cover/plastic.png"
+              alt=""
+            />
+          </div>
+          <div class="product-item flex justify-center md:w-1/3">
+            <img
+              class="w-90 md:w-98 md:h-100"
+              src="../image/warnning/24b7728a-1236-4aac-8778-37fd66eeb5fd.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="bg-gray-800 h-1 w-[75%] mx-auto mt-8"></div>
+        <!-- line -->
+      </div>
+      <div class="product-example">
+        <h1 class="text-xl md:text-3xl text-center mb-8">ภาพตัวอย่างสินค้า</h1>
+      </div>
+      <div class="product-list flex flex-wrap md:flex-row flex-col">
+        <div class="product-item md:w-1/3 justify-center flex">
+          <img
+            class="w-90 md:w-98 bg-red-200 h-100"
+            src="../image/product_Review/pvc/465114352_9085708834796962_3808033743380998760_n.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-item md:w-1/3 justify-center flex">
+          <img
+            class="w-90 md:w-98 bg-red-200 h-100"
+            src="../image/product_Review/pvc/465275599_9085708598130319_7818501926178491204_n.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-item md:w-1/3 justify-center flex">
+          <img
+            class="w-90 md:w-98 bg-red-200 h-100"
+            src="../image/product_Review/pvc/465276059_9085708841463628_4814730029963782410_n.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-item md:w-1/3 justify-center flex">
+          <img
+            class="w-90 md:w-98 bg-red-200 h-100"
+            src="../image/product_Review/pvc/465408241_9085708584796987_5639077955838144207_n.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-item md:w-1/3 justify-center flex">
+          <img
+            class="w-90 md:w-98 bg-red-200 h-100"
+            src="../image/product_Review/pvc/465409677_9085708854796960_6854784317213640158_n.jpg"
+            alt=""
+          />
+        </div>
+        <div class="product-item md:w-1/3 justify-center flex">
+          <img
+            class="w-90 md:w-98 bg-red-200 h-100"
+            src="../image/product_Review/pvc/465504488_9085708591463653_2781438150398771660_n.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ##################################### FOOTER ###########################################  -->
+
+    <section class="footer">
+      <div class="container mx-auto">
+          <div class="footer-box">
+              <div class="footer-info">
+                  <h1>ติดต่อเราได้ที่นี่</h1>
+                  <h3>Carcover p.a.c By aps</h3>
+                  <p>ตัวแทนจำหน่ายผ้าคลุมรถ</p>
+              </div>
+              <div class="footer-text">
+                  <!-- <p><i class="fa-solid fa-envelope"></i> &nbsp;example999@gmail.com</p>
+                  <p><i class="fa-brands fa-facebook"></i> &nbsp;<a href="https://www.facebook.com/tigercovers/">https://www.facebook.com/example</a></p> -->
+                  <p><i class="fa-brands fa-line"></i> &nbsp;<a href="https://line.me/ti/p/~@000drfuc">@example</a></p>
+                  <p><i class="fa-solid fa-phone"></i> &nbsp;095-851-4101</p>
+              </div>
+              <div class="footer-qrcode">
+                  <p>แสกนคิวอาร์โค้ดตรงนี้</p>
+                  <img width="100%" src="images/QRcodeline.jpg" alt="">
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- ######################## BTN ONTOP ########################  -->
+    <div id="sctop" onclick="scrollTopp()" class="scrollTop">
+      <i class="fa-solid fa-angles-up"></i>
+    </div>
+    <!-- ######################## BTN ONTOP ########################  -->
+
+    <script src="../script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  </body>
+</html>

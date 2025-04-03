@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carcover-aps p.a.c. By aps</title>
+    
+    <!-- Import Tailwindcss -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/product.css" />
+    <link rel="stylesheet" href="../style/scroollTop.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <!-- Import Carousel SpileLibrary -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"/>
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"/>
+    <!-- FONT AWESOME -->
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="  crossorigin="anonymous"  referrerpolicy="no-referrer"/>
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link  href="https://fonts.googleapis.com/css2?family=Prompt&display=swap"  rel="stylesheet"/>
+    <!-- FONT AWESOME -->
+    <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css"  integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ=="  crossorigin="anonymous"  referrerpolicy="no-referrer"/>
+    <!-- LINK ANIMATE ON SCROLL LIBRARY -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ##################################### NAVBAR ###########################################  -->
+    <nav class="bg-gray-800 p-6 fixed top-0 w-full z-1 shadow-xl">
+        <div class="mx-4 flex justify-between items-center">
+          <!-- Logo (Left) -->
+          <div class="text-white font-bold text-xl">Carcover p.a.c By aps</div>
+  
+          <!-- Navbar Links (Right) -->
+          <div class="space-x-12 hidden md:flex text-xl">
+            <a href="../index.html" class="text-white hover:text-gray-300">หน้าแรก</a>
+            <a href="productMenu.html" class="text-white hover:text-gray-300">สินค้า</a>
+            <a href="customerReview.html" class="text-white hover:text-gray-300">รีวิว</a>
+            <a href="contact.html" class="text-white hover:text-gray-300">ติดต่อเรา</a>
+          </div>
+  
+          <!-- Mobile Menu Icon (for small screens) -->
+          <div class="md:hidden">
+            <button id="menuButton" class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M3 12h18M3 6h18M3 18h18"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Mobile Dropdown Menu (initially hidden) -->
+        <div id="mobileMenu" class="md:hidden hidden bg-gray-800 text-white">
+          <ul class="flex flex-col space-y-5 p-4 text-center text-lg">
+            <li><a href="../index.html" class="hover:text-gray-300">หน้าแรก</a></li>
+            <li><a href="productMenu.html" class="hover:text-gray-300">สินค้า</a></li>
+            <li><a href="customerReview.html" class="hover:text-gray-300">รีวิว</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">ติดต่อเรา</a></li>
+          </ul>
+        </div>
+      </nav>
+    <!-- ##################################### PRODUCT ###########################################  -->
+    <section class="product text-center container mx-auto my-10 mt-30">
+        <h1 class="text-2xl md:text-3xl my-2">สินค้า</h1>
+        <p class="text-red-600 text-lg md:text-xl">
+          คลิกรูปภาพเพื่อดูรายละเอียดสินค้า
+        </p>
+        <div class="bg-gray-800 h-1 w-[75%] mx-auto mt-8"></div>
+        <!-- line -->
+        <div class="product-container flex flex-wrap p-8">
+          <div class="product-item w-full sm:w-1/2 md:w-1/3">
+            <a href="product1.html" class="relative block">
+              <img
+                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl transition-all duration-300 hover:brightness-75"
+                src="../image/product/product1.jpg"
+                alt="Product 1"
+              />
+            </a>
+          </div>
+          <div class="product-item w-full sm:w-1/2 md:w-1/3">
+            <a href="product2.html" class="relative block">
+              <img
+                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl transition-all duration-300 hover:brightness-75"
+                src="../image/product/product2.jpg"
+                alt="Product 2"
+              />
+            </a>
+          </div>
+          <div class="product-item w-full sm:w-1/2 md:w-1/3">
+            <a href="product3.html" class="relative block">
+              <img
+                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl transition-all duration-300 hover:brightness-75"
+                src="../image/product/product3.jpg"
+                alt="Product 3"
+              />
+            </a>
+          </div>
+          <div class="product-item w-full sm:w-1/2 md:w-1/3">
+            <a href="product4.html" class="relative block">
+              <img
+                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl transition-all duration-300 hover:brightness-75"
+                src="../image/product/product4.jpg"
+                alt="Product 4"
+              />
+            </a>
+          </div>
+          <div class="product-item w-full sm:w-1/2 md:w-1/3">
+            <a href="product5.html" class="relative block">
+              <img
+                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl transition-all duration-300 hover:brightness-75"
+                src="../image/product/product5.jpg"
+                alt="Product 5"
+              />
+            </a>
+          </div>
+          <div class="product-item w-full sm:w-1/2 md:w-1/3">
+            <a href="product6.html" class="relative block">
+              <img
+                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl transition-all duration-300 hover:brightness-75"
+                src="../image/product/product6.jpg"
+                alt="Product 6"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- ##################################### FOOTER ###########################################  -->
+
+    <section class="footer">
+        <div class="container mx-auto">
+            <div class="footer-box">
+                <div class="footer-info">
+                    <h1>ติดต่อเราได้ที่นี่</h1>
+                    <h3>Carcover p.a.c By aps</h3>
+                    <p>ตัวแทนจำหน่ายผ้าคลุมรถ</p>
+                </div>
+                <div class="footer-text">
+                    <!-- <p><i class="fa-solid fa-envelope"></i> &nbsp;example999@gmail.com</p>
+                    <p><i class="fa-brands fa-facebook"></i> &nbsp;<a href="https://www.facebook.com/tigercovers/">https://www.facebook.com/example</a></p> -->
+                    <p><i class="fa-brands fa-line"></i> &nbsp;<a href="https://line.me/ti/p/~@000drfuc">@example</a></p>
+                    <p><i class="fa-solid fa-phone"></i> &nbsp;095-851-4101</p>
+                </div>
+                <div class="footer-qrcode">
+                    <p>แสกนคิวอาร์โค้ดตรงนี้</p>
+                    <img width="100%" src="images/QRcodeline.jpg" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- ######################## BTN ONTOP ########################  -->
+    <div id="sctop" onclick="scrollTopp()" class="scrollTop">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+      <!-- ######################## BTN ONTOP ########################  -->
+  
+      <script src="../script.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.product-info p {
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+.product-item {
+    margin: 14px 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
