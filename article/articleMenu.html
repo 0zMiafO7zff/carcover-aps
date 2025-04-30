@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Import CSS -->
     <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/product.css" />
     <link rel="stylesheet" href="../style/scroollTop.css">
     <link rel="stylesheet" href="../style/footer.css">
     <!-- Import Carousel SpileLibrary -->
@@ -42,7 +43,7 @@
             <a href="productMenu.html" class="text-white hover:text-gray-300">สินค้า</a>
             <a href="customerReview.html" class="text-white hover:text-gray-300">รีวิว</a>
             <a
-              href="../article/articleMenu.html"
+              href="articleMenu.html"
               class="text-white hover:text-gray-300"
               >บทความ</a
             >
@@ -69,13 +70,13 @@
         </div>
   
         <!-- Mobile Dropdown Menu (initially hidden) -->
-        <div id="mobileMenu" class="md:hidden hidden bg-gray-800 text-white">
-          <ul class="flex flex-col space-y-5 text-center text-lg pt-5 mt-6 border-t-1">
+        <div id="mobileMenu" class="md:hidden hidden bg-neutral-800 text-white">
+          <ul class="flex flex-col space-y-5 p-4 text-center text-lg">
             <li><a href="../index.html" class="hover:text-gray-300">หน้าแรก</a></li>
             <li><a href="productMenu.html" class="hover:text-gray-300">สินค้า</a></li>
             <li><a href="customerReview.html" class="hover:text-gray-300">รีวิว</a></li>
             <li><a
-              href="../article/articleMenu.html"
+              href="articleMenu.html"
               class="text-white hover:text-gray-300"
               >บทความ</a
             ></li>
@@ -83,54 +84,43 @@
           </ul>
         </div>
       </nav>
-    <!-- ##################################### PRODUCT ###########################################  -->
-    <section class="review text-center container mx-auto my-10 mt-30">
-        <h1 class="text-2xl md:text-3xl my-2">รีวิวจากลูกค้า</h1>
-        <!-- <p class="text-red-600 text-lg md:text-xl">
-          คลิกรูปภาพเพื่อดูรายละเอียดสินค้า
-        </p> -->
-        <div class="bg-neutral-800 h-1 w-[75%] mx-auto mt-8"></div>
-        <!-- line -->
-        <div class="review-container flex flex-wrap p-8">
-          <div class="review-item w-full sm:w-1/2 md:w-1/3">
-            <div class="relative block">
-              <img
-                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl"
-                src="../image/customer_Review/1.jfif"
-                alt="review 1"
-              />
-            </div>
-          </div>
-          <div class="review-item w-full sm:w-1/2 md:w-1/3">
-            <div class="relative block">
-              <img
-                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl"
-                src="../image/customer_Review/2.jfif"
-                alt="review 1"
-              />
-            </div>
-          </div>
-          <div class="review-item w-full sm:w-1/2 md:w-1/3">
-            <div class="relative block">
-              <img
-                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl"
-                src="../image/customer_Review/3.jfif"
-                alt="review 1"
-              />
-            </div>
-          </div>
-          <div class="review-item w-full sm:w-1/2 md:w-1/3">
-            <div class="relative block">
-              <img
-                class="w-[98%] mx-auto my-2 shadow-xl rounded-xl"
-                src="../image/customer_Review/4.jfif"
-                alt="review 1"
-              />
-            </div>
-          </div>
-          
+    <!-- ##################################### ARTICLE ###########################################  -->
+    
+    <section class="article my-10 mt-20 md:mt-30 container mx-auto max-w-5xl">
+      <h1 class="text-2xl md:text-3xl text-center mb-4">บทความ</h1>
+      <div class="bg-gray-800 h-1 w-[75%] mx-auto my-8"></div>
+    
+      <!-- เรียงข้อความ 2 แถว 2 คอลัมน์ -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- กล่องข้อความ 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-gray-800">ประโยชน์ของผ้าคลุมรถ</h2>
+          <p class="mt-4 text-gray-600">ในยุคที่รถยนต์ไม่ใช่แค่พาหนะ แต่กลายเป็นทรัพย์สินที่มีมูลค่าและสะท้อนตัวตนของ...</p>
+          <a href="article1.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">อ่านเพิ่มเติม</a>
         </div>
-      </section>
+    
+        <!-- กล่องข้อความ 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-gray-800">วิธีดูแลและทำความสะอาดผ้าคลุมรถ</h2>
+          <p class="mt-4 text-gray-600">ผ้าคลุมรถเป็นอุปกรณ์ที่ช่วยปกป้องรถจากฝุ่น แสงแดด และรอยขีดข่วน แต่หากละเลย...</p>
+          <a href="article2.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">อ่านเพิ่มเติม</a>
+        </div>
+    
+        <!-- กล่องข้อความ 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-gray-800">ข้อควรระวังในการใช้ผ้าคลุมรถ</h2>
+          <p class="mt-4 text-gray-600">การใช้ผ้าคลุมรถทันทีหลังจากขับรถในระยะทางไกลอาจเป็นอันตรายได้ เนื่องจากความ...</p>
+          <a href="article3.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">อ่านเพิ่มเติม</a>
+        </div>
+    
+        <!-- กล่องข้อความ 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-semibold text-gray-800">ใช้ผ้าคลุมรถช่วยประหยัดค่าดูแลรถอย่างไร</h2>
+          <p class="mt-4 text-gray-600">การดูแลรักษารถยนต์ไม่เพียงแต่ช่วยให้รถของคุณดูดี แต่ยังช่วยลดค่าใช้จ่ายในการ...</p>
+          <a href="article4.html" class="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">อ่านเพิ่มเติม</a>
+        </div>
+      </div>
+    </section>
       <!-- ##################################### FOOTER ###########################################  -->
 
     <section class="footer">
@@ -144,7 +134,7 @@
                       พร้อมบริการส่งถึงบ้านทุกที่ทั่วประเทศ</p>                </div>
                 <div class="footer-text">
                     <p><i class="fa-solid fa-envelope"></i> &nbsp;carcover.aps@gmail.com</p>
-                    <!-- <p><i class="fa-brands fa-facebook"></i> &nbsp;<a href="https://www.facebook.com/tigercovers/">https://www.facebook.com/example</a></p> -->
+                    <p><i class="fa-brands fa-facebook"></i> &nbsp;<a href="https://www.facebook.com/tigercovers/">https://www.facebook.com/example</a></p>
                     <p><i class="fa-brands fa-line"></i> &nbsp;<a href="https://line.me/ti/p/~@000drfuc">@example</a></p>
                     <p><i class="fa-solid fa-phone"></i> &nbsp;095-851-4101</p>
                 </div>
